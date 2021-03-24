@@ -536,8 +536,8 @@ body {
           transform-origin: center;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
 }
 
 @-webkit-keyframes spin {
@@ -546,8 +546,8 @@ body {
             transform: rotateY(0turn) rotateZ(0deg);
   }
   50% {
-    -webkit-transform: rotateY(1turn) rotateZ(10deg);
-            transform: rotateY(1turn) rotateZ(10deg);
+    -webkit-transform: rotateY(1turn) rotateZ(5deg);
+            transform: rotateY(1turn) rotateZ(5deg);
   }
 }
 
@@ -557,8 +557,8 @@ body {
             transform: rotateY(0turn) rotateZ(0deg);
   }
   50% {
-    -webkit-transform: rotateY(1turn) rotateZ(10deg);
-            transform: rotateY(1turn) rotateZ(10deg);
+    -webkit-transform: rotateY(1turn) rotateZ(5deg);
+            transform: rotateY(1turn) rotateZ(5deg);
   }
 }
 

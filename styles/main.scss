@@ -324,7 +324,7 @@ body {
   transform-origin: center;
   // backface-visibility: hidden;
   animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
+  animation-timing-function: linear;
 }
 
 @keyframes spin {
@@ -332,7 +332,7 @@ body {
     transform: rotateY(0turn) rotateZ(0deg);
   }
   50%{
-    transform: rotateY(1turn) rotateZ(10deg);
+    transform: rotateY(1turn) rotateZ(5deg);
 
   }
 }
