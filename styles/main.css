@@ -377,15 +377,6 @@ body {
 }
 
 .iphone {
-  position: relative;
-  top: 0;
-  overflow: hidden;
-  width: 100%;
-  padding-top: calc((700 / 360)*100%);
-  border-radius: 40px;
-  margin: auto;
-  -webkit-box-shadow: 0px 0px 0px 11px #1f1f1f, 0px 0px 0px 13px #191919, 0px 0px 0px 20px #111;
-          box-shadow: 0px 0px 0px 11px #1f1f1f, 0px 0px 0px 13px #191919, 0px 0px 0px 20px #111;
   background-color: #7371ee;
 }
 
@@ -495,23 +486,28 @@ body {
 }
 
 .iphone-back {
+  -webkit-transform: translateZ(50px);
+          transform: translateZ(50px);
+  background-color: red;
+}
+
+.face {
   position: relative;
-  overflow: hidden;
   top: 0;
+  overflow: hidden;
   width: 100%;
   padding-top: calc((700 / 360)*100%);
   border-radius: 40px;
   margin: auto;
-  -webkit-box-shadow: 0px 0px 0px 11px #1f1f1f, 0px 0px 0px 13px #191919, 0px 0px 0px 20px #111;
-          box-shadow: 0px 0px 0px 11px #1f1f1f, 0px 0px 0px 13px #191919, 0px 0px 0px 20px #111;
-  background-color: red;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
-  -webkit-transform: translateZ(30px);
-          transform: translateZ(30px);
+  -webkit-box-shadow: 0px 0px 0px 11px #1f1f1f, 0px 0px 0px 13px #191919, 0px 0px 0px 20px #111;
+          box-shadow: 0px 0px 0px 11px #1f1f1f, 0px 0px 0px 13px #191919, 0px 0px 0px 20px #111;
 }
 
 .iphone-case {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
   -webkit-perspective: 1000px;
           perspective: 1000px;
 }
