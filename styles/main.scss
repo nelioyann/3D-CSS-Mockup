@@ -151,7 +151,7 @@ $mobile-height: 700;
 $mobile-width: 360;
 $index-tapbar: 2;
 $size-tapbar: 30px;
-$mobile-side: 50px;
+$mobile-side: 40px;
 
 
 * {
@@ -167,7 +167,8 @@ body {
 // display: grid
 // place-content: center
 .iphone {
-  background-color: #7371ee;
+  background-color: $color-dark;
+  border-radius:30px;
 
   &:before,
   &:after {
@@ -275,25 +276,14 @@ body {
 
 .iphone-back{
   transform: translateZ(-$mobile-side);
-  background-color:red;
+  background-color:$color-dark;
+  // backface-visibility: hidden;
+  transform-origin:center;
+  // transform: rotateY(180deg);
+  border-radius:0px;
   transform-style: preserve-3d;
-  perspective: 2000px;
-  .migi, .hidari{
-    position: absolute;
-    width: $mobile-side;
-    height: calc(#{$mobile-height} * 1px);
-    background-color: blue;
-    top: 0;
-    // left: 0;
-  }
-  .hidari{
-    left: 0;
-    transform-origin: left;
-    transform: rotateY(45deg);
-  }
-  .migi{
-    right: 0;
-  }
+  perspective: 1000px;
+  
 }
 
 .face{
@@ -303,7 +293,6 @@ body {
   overflow: hidden;
   width: 100%;
   padding-top: calc((#{$mobile-height} / #{$mobile-width})*100%);
-  border-radius: 40px;
   margin: auto;
   // transform-style: preserve-3d;
   box-shadow: 0px 0px 0px 11px $color-dark, 0px 0px 0px 13px #191919, 0px 0px 0px 20px #111;
@@ -312,13 +301,16 @@ body {
 // .side
 // 	box-shadow: inset 0 0 40px #ccc;
 .iphone-case{
-  // transform: scale(0.5);
   transform-style: preserve-3d;
   position: relative;
   perspective: 2000px;
-  // transform: rotateY(0.25turn);
 }
 
+.iphone_container{
+  transform: scale(1);
+
+
+}
 
 
 
@@ -339,3 +331,74 @@ body {
 
   }
 }
+
+.migi, .hidari, .shita, .ue{
+  background-color:$color-dark;
+  box-shadow: inset 0 0 40px #ccc;
+
+}
+.migi, .hidari{
+  // background-color:$color-dark;
+  // background-color:red;
+  box-shadow:none;
+  box-shadow: 0px -20px 0px $color-dark, 0px 20px 0px $color-dark; 
+  
+  width: $mobile-side;
+  
+}
+
+.migi{
+  right: 0;
+  transform-origin: right;
+  transform: rotateY(-0.25turn) translateZ(-20px);
+}
+.hidari{
+  left: 0;
+  transform-origin: left;
+  transform: rotateY(0.25turn) translateZ(-20px);
+}
+
+.shita, .ue{
+  // background-color:blue;
+  box-shadow:none;
+  box-shadow: -20px 0px 0px $color-dark, 20px 0px 0px $color-dark; 
+
+  display: block;
+  width: $mobile-width;
+  padding-top: $mobile-side;
+  // height: $mobile-side;
+  // height: $mobile-
+}
+
+.ue{
+  top: 0;
+  transform-origin:top;
+  transform: rotateX(-0.25turn) translateZ(-20px);
+}
+.shita{
+  // bottom: calc(#{$mobile-height} * -1px);
+  // top: $mobile-height;
+  // padding: 0;
+  bottom: -1430px;
+  height: $mobile-side;
+  transform-origin:bottom;
+  transform: rotateX(0.25turn) translateZ(20px);
+}
+// .migi, .hidari{
+//   position: absolute;
+// transform-style: preserve-3d;
+
+//   width: $mobile-side;
+//   height: calc(#{$mobile-height} * 1px);
+//   background-color: blue;
+//   top: 0;
+//   // left: 0;
+// }
+// .hidari{
+//   left: 0;
+//   transform-origin: left;
+//   transform: rotateY(45deg);
+// }
+// .migi{
+//   right: 0;
+// }
