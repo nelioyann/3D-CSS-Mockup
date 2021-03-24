@@ -36,18 +36,13 @@
     <meta property="twitter:image" content="">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
-<body  class="theme-dark grid gap">
+<body class=" grid gap">
     <main data-barba="wrapper" class="">
         <header class="flex flex-ai-c flex-jc-sb">
             <h1>Simpler Websites</h1>
-            <nav>
-                <a href="/about.html">About</a>
-                <a href="/observer.html">Observer</a>
-                <a href="/">Home</a>
-            </nav>
         </header>
         <div class="load-container">
             <div class="loading-screen">
@@ -58,34 +53,21 @@
 
         <section class="barba-container" data-barba="container" data-barba-namespace="home">
 
-            <h2 class="animate-fade-up">Home</h2>
-            <h3 >Lorem ipsum dolor sit amet.</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil recusandae voluptates repudiandae dolorem
-                expedita dignissimos earum officiis quo provident nam cum molestiae perspiciatis dolores, facere hic
-                minus, quae
-                itaque quasi.</p>
-            <h2 class="animate-fade-up">More is less</h2>
-            <h3>Lorem.</h3>
-           
-            <figure>
-                <img width="1500" height="628" src="https://picsum.photos/1400/628" alt="Placeholder Image">
+            <div class="iphone_container">
 
-                <figcaption>A placeholder image</figcaption>
-            </figure>
-            <h2 class="animate-fade-up">More is less</h2>
-            <h3>Lorem.</h3>
-           
-            <figure>
-                <img width="1500" height="628" src="https://picsum.photos/1000/628" alt="Placeholder Image">
-
-                <figcaption>A placeholder image</figcaption>
-            </figure>
-            <h2 class="animate-fade-up">More is less</h2>
-            <h3>Lorem. Coffee.</h3>
-           
-            <video loop muted playsinline preload="none" class="js-viewport-aware-video coffee-video" poster="./images/coffee.jpg">
-                <source type="video/mp4" src="./videos/coffee.mp4">
-              </video>
+                <div class="iphone-case spin">
+                    <div class="iphone-back"></div>
+                    <div class="iphone">
+                        <iframe class="iphone-frame" src="https://moodtracker.tk" frameborder="0"></iframe>
+                        <div class="iphone__bar">
+                            <div class="left">14:29</div>
+                            <div class="right"></div>
+                        </div>
+                        <div class="iphone__speaker"></div>
+                        <div class="iphone__camera"></div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <aside class="">
@@ -106,10 +88,10 @@
             </ul>
         </section>
         <script src="https://cdn.jsdelivr.net/npm/gsap@3.6.0/dist/gsap.min.js"></script>
-    <!-- <script src="https://unpkg.com/@barba/core"></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
+        <!-- <script src="https://unpkg.com/@barba/core"></script> -->
+        <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
 
-    <script src="./scripts/transitions.js"></script>
+        <script src="./scripts/transitions.js"></script>
 </body>
 
 </html>
