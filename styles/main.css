@@ -486,21 +486,43 @@ body {
 }
 
 .iphone-back {
-  -webkit-transform: translateZ(50px);
-          transform: translateZ(50px);
+  -webkit-transform: translateZ(-50px);
+          transform: translateZ(-50px);
   background-color: red;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-perspective: 2000px;
+          perspective: 2000px;
+}
+
+.iphone-back .migi, .iphone-back .hidari {
+  position: absolute;
+  width: 50px;
+  height: calc(700 * 1px);
+  background-color: blue;
+  top: 0;
+}
+
+.iphone-back .hidari {
+  left: 0;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: rotateY(45deg);
+          transform: rotateY(45deg);
+}
+
+.iphone-back .migi {
+  right: 0;
 }
 
 .face {
-  position: relative;
+  position: absolute;
   top: 0;
   overflow: hidden;
   width: 100%;
   padding-top: calc((700 / 360)*100%);
   border-radius: 40px;
   margin: auto;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
   -webkit-box-shadow: 0px 0px 0px 11px #1f1f1f, 0px 0px 0px 13px #191919, 0px 0px 0px 20px #111;
           box-shadow: 0px 0px 0px 11px #1f1f1f, 0px 0px 0px 13px #191919, 0px 0px 0px 20px #111;
 }
@@ -508,15 +530,16 @@ body {
 .iphone-case {
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
-  -webkit-perspective: 1000px;
-          perspective: 1000px;
+  position: relative;
+  -webkit-perspective: 2000px;
+          perspective: 2000px;
 }
 
 .spin {
   -webkit-animation-name: spin;
           animation-name: spin;
-  -webkit-animation-duration: 6s;
-          animation-duration: 6s;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   -webkit-animation-timing-function: ease-in-out;
