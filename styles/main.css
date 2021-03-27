@@ -564,11 +564,6 @@ body {
           transform: translateZ(calc(80px));
 }
 
-.iphone_container:hover .iphone__speaker {
-  -webkit-transform: translateZ(calc(80px));
-          transform: translateZ(calc(80px));
-}
-
 .spin {
   -webkit-animation-name: spin;
           animation-name: spin;

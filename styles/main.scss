@@ -342,9 +342,7 @@ body {
 
     }
 
-    .iphone__speaker{
-      transform:translateZ(calc(#{$mobile-side * 2}));
-    }
+    
     // animation-play-state: paused;
   }
 }
