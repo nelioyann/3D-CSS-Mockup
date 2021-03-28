@@ -550,14 +550,16 @@ main section {
 .spin {
   -webkit-animation-name: spin;
           animation-name: spin;
-  -webkit-animation-duration: 15s;
-          animation-duration: 15s;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
   -webkit-transform-origin: center;
           transform-origin: center;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
+  -webkit-animation-timing-function: cubic-bezier(0.79, -0.37, 0.32, 1.49);
+          animation-timing-function: cubic-bezier(0.79, -0.37, 0.32, 1.49);
 }
 
 @-webkit-keyframes spin {

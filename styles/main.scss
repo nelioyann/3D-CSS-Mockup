@@ -368,11 +368,11 @@ $color-case: rgb(232, 232, 232);
 
 .spin {
   animation-name: spin;
-  animation-duration: 15s;
+  animation-duration: 5s;
   transform-origin: center;
   animation-fill-mode: forwards;
   animation-iteration-count: infinite;
-  // animation-timing-function: ease-in-out;
+  animation-timing-function: cubic-bezier(0.79, -0.37, 0.32, 1.49);
 }
 
 @keyframes spin {
