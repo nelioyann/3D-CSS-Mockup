@@ -40,20 +40,3 @@ h2{
     color: $clr-light;
 }
 
-a{
-    text-decoration: none;
-    color: inherit;
-    &:link{
-        color: $color-primary;
-    }
-    &:hover{
-        opacity: 0.5;
-    }
-    &:active{
-        color: $color-primary;
-    }
-}
-
-figure{
-    margin: 0 ;
-}
